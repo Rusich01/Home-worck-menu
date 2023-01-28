@@ -1,0 +1,65 @@
+@import url(./normalize.css);
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 100px auto;
+}
+a {
+  text-decoration: none;
+  color: #d3cfcf;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  margin: 0 0 200px;
+  padding: 0;
+  background: #121616e0;
+  border-bottom: 10px solid #376068;
+}
+.menu > li {
+  width: calc(100% / 4);
+  position: relative;
+  float: left;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+.menu li:hover > ul {
+  display: block;
+}
+.next-list,
+.next-list ul {
+  background: #376068;
+  text-align: center;
+}
+.next-list ul {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+.next-list li {
+  width: 150px;
+  padding: 20px 0;
+}
